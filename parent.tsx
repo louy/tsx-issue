@@ -1,12 +1,10 @@
 import * as React from 'react';
-import Child from './child';
+import {Child} from './child';
 
-class Parent extends React.Component<void, void> {
+export class Parent extends React.Component<{}, void> {
   render() {
     return (
       <Child></Child>
     );
   }
 }
-
-export default Parent;
